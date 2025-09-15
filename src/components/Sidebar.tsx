@@ -1,6 +1,7 @@
 "use client";
 import { sidebarItems } from "@/features/sidebarItems";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
@@ -8,7 +9,7 @@ export default function Sidebar() {
   return (
     <aside className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col p-4 min-h-screen text-sidebar-foreground">
       <div className="flex flex-col items-center gap-2 mb-8">
-        <img src="/logo_yolobank.png" alt="Logo" className="w-32 h-8" />
+  <Image src="/logo_yolobank.png" alt="Logo" width={128} height={48} className="w-32 h-8" priority />
         
       </div>
       <nav className="flex-1">

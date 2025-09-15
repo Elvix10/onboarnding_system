@@ -4,7 +4,7 @@ import { useAddressStore } from "@/stores/addressStore";
 import { useEmployeeStore } from "@/stores/employeeStore";
 import { AddressDialog } from "@/components/dialog/AddressDialog";
 import { Button } from "@/components/ui/button";
-import { MapPin, Pencil, Trash2 } from "lucide-react";
+import { MapPin,  Trash2 } from "lucide-react";
 import Sidebar from "@/components/Sidebar";
 import { SearchBar } from "@/components/SearchBar";
 
@@ -67,7 +67,7 @@ export default function EnderecoPage() {
 
             {addresses.length === 0 && (
               <div className="text-center py-12 text-muted-foreground">
-                Nenhum endereço cadastrado. Clique em "Adicionar Endereço" para começar.
+                Nenhum endereço cadastrado. Clique em Adicionar Endereço para começar.
               </div>
             )}
           </div>

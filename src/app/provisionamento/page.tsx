@@ -1,6 +1,6 @@
 import { SearchBar } from "@/components/SearchBar";
 import Sidebar from "@/components/Sidebar";
-import { Server, HardDrive, Cpu, Network, Power } from "lucide-react";
+/* import { Server, HardDrive, Cpu, Network, Power } from "lucide-react"; */
 
 export default function ProvisionamentoPage() {
   return (

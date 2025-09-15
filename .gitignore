@@ -9,6 +9,8 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.tech_stack.md 
+.model.md
 
 # testing
 /coverage

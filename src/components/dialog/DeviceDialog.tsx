@@ -36,8 +36,12 @@ export function DeviceDialog({ mode = "create", deviceId, trigger }: DeviceDialo
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (mode === "create") {
-      addDevice(formData as any);
+    if (mode === "create" && formData.name && formData.type && formData.description) {
+      addDevice({
+        name: formData.name,
+        type: formData.type,
+        description: formData.description
+      });
     } else if (deviceId) {
       updateDevice(deviceId, formData);
     }
@@ -76,7 +80,7 @@ export function DeviceDialog({ mode = "create", deviceId, trigger }: DeviceDialo
             <Label htmlFor="type">Tipo</Label>
             <Select
               value={formData.type || ""}
-              onValueChange={(value) => setFormData({ ...formData, type: value as any })}
+              onValueChange={(value) => setFormData({ ...formData, type: value as Device['type'] })}
             >
               <SelectTrigger>
                 <SelectValue placeholder="Selecione o tipo" />

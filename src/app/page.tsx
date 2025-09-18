@@ -24,7 +24,7 @@ export default function LoginPage() {
     }
     if (email === defaultEmail && password === defaultPassword) {
       setError("");
-      router.push("/dashboard");
+      router.push("admin/dashboard");
     } else {
       setError("Email ou senha inválidos.");
     }

@@ -1,4 +1,4 @@
-import { Home, Users, Building2, Wrench, Package2, MapPin, Settings } from "lucide-react";
+import { Home, Users, Building2, Wrench, Package2, MapPin, Settings, Laptop, MonitorSmartphone } from "lucide-react";
 
 export interface SidebarItem {
   label: string;
@@ -9,37 +9,42 @@ export interface SidebarItem {
 export const sidebarItems: SidebarItem[] = [
   {
     label: "Dashboard",
-    path: "/dashboard",
+    path: "/admin/dashboard",
     icon: Home,
   },
   {
     label: "Funcionarios",
-    path: "/funcionarios",
+    path: "/admin/funcionarios",
     icon: Users,
   },
   {
     label: "Departamentos",
-    path: "/departamentos",
+    path: "/admin/departamentos",
     icon: Building2,
   },
   {
-    label: "Ferramentas",
-    path: "/ferramentas",
-    icon: Wrench,
+    label: "Dispositivos",
+    path: "/admin/dispositivos",
+    icon: Laptop,
   },
   {
     label: "Provisionamento",
-    path: "/provisionamento",
-    icon: Package2,
+    path: "/admin/provisionamento",
+    icon: MonitorSmartphone,
+  },
+  {
+    label: "Ferramentas",
+    path: "/admin/ferramentas",
+    icon: Wrench,
   },
   {
     label: "Endereços",
-    path: "/enderecos",
+    path: "/admin/enderecos",
     icon: MapPin,
   },
   {
     label: "Configurações",
-    path: "/configuracoes",
+    path: "/admin/configuracoes",
     icon: Settings,
   },
 ];

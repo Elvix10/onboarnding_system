@@ -9,7 +9,7 @@ export default function Sidebar() {
   return (
     <aside className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col p-4 min-h-screen text-sidebar-foreground">
       <div className="flex flex-col items-center gap-2 mb-8">
-  <Image src="/logo_yolobank.png" alt="Logo" width={128} height={48} className="w-32 h-8" priority />
+  <Image src="/logo.svg" alt="Logo" width={256} height={128}  priority />
         
       </div>
       <nav className="flex-1">
